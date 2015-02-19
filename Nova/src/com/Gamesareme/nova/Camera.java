@@ -18,29 +18,29 @@ public class Camera {
 	private Player player;  //This is my 
 	
 	
-	public Camera(float x, float y){
-		this.x =x;
-		this.y = y;
-		for(CoreObject obj : Game.getInstance().getController().getObjects()){
-			if(obj.getId() == Identities.PLAYER){
-				player = (Player)obj;
+	public Camera(float x, float y){  //This constructor sets the cameras x, y location.
+		this.x =x;  //set x location.
+		this.y = y;  //set y location.
+		for(CoreObject obj : Game.getInstance().getController().getObjects()){  //Loop through all the objects in the game.
+			if(obj.getId() == Identities.PLAYER){  //See if the objects id is the same as the player's id.
+				player = (Player)obj;  //Set the player to the object with the players id.
 			}
 		}
 	}
 	
-	public void tick(){
-		x += ((-player.getX() + Game.WIDTH/2) - x) * 0.095f;
+	public void tick(){  //This runes 60 times a second.
+		x += ((-player.getX() + Game.WIDTH/2) - x) * 0.095f;  //Update the camera to the players location.
 	}
 
 	/**
-	 * @return the x
+	 * @return the cameras x location.
 	 */
 	public float getX() {
 		return x;
 	}
 
 	/**
-	 * @return the y
+	 * @return the cameras y location.
 	 */
 	public float getY() {
 		return y;
