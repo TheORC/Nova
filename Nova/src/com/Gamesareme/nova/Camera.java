@@ -1,5 +1,6 @@
 /**
- * 
+ * This is my games camera class.
+ * This is where I tell the camera where to move.
  */
 package com.Gamesareme.nova;
 
@@ -13,7 +14,7 @@ import com.Gamesareme.nova.libs.Identities;
  */
 public class Camera {
 	
-	private float x, y;
+	private float x, y;//The cameras x and y location.
 	private Player player;
 	
 	
