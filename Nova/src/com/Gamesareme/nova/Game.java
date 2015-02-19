@@ -163,7 +163,7 @@ public class Game extends Canvas implements Runnable{
 		}
 		Graphics g = bf.getDrawGraphics();
 		Graphics2D g2d = (Graphics2D)g;
-		g.setColor(new Color(6, 0, 40));
+		g.setColor(new Color(100, 0, 255));
 		g.fillRect(0, 0, WIDTH, HEIGHT);
 		//////////////////////////////////////////////////////////
 		if(state == GameState.LOADING){
