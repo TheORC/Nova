@@ -33,8 +33,8 @@ public class Game extends Canvas implements Runnable{
 
 	private static final long serialVersionUID = -590962872869808290L;
 	
-	public static final int WIDTH = 800; //640
-	public static final int HEIGHT = WIDTH / 4 * 3;
+	public static final int WIDTH = 1280; //640
+	public static final int HEIGHT = WIDTH / 2 * 1;
 	public static final String TITLE = "Nova";
 	public static GameState state = GameState.LOADING;
 	private static Game game = new Game();

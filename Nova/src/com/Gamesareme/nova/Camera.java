@@ -14,8 +14,8 @@ import com.Gamesareme.nova.libs.Identities;
  */
 public class Camera {
 	
-	private float x, y;//The cameras x and y location.
-	private Player player;
+	private float x, y;  //The cameras x and y location.
+	private Player player;  //This is my 
 	
 	
 	public Camera(float x, float y){
