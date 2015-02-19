@@ -1,5 +1,6 @@
 /**
- * 
+ * This is my games main class.
+ * This is where I load every thing that I need.
  */
 package com.Gamesareme.nova;
 
@@ -27,11 +28,11 @@ import com.Gamesareme.nova.world.Level;
 
 /**
  * @author Oliver
- *
  */
 public class Game extends Canvas implements Runnable{
 
-	private static final long serialVersionUID = -590962872869808290L;
+	
+	private static final long serialVersionUID = -590962872869808290L;  //My games serial version.
 	
 	public static final int WIDTH = 1280; //640
 	public static final int HEIGHT = WIDTH / 2 * 1;
