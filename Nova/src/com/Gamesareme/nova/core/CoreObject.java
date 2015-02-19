@@ -26,8 +26,6 @@ public abstract class CoreObject {
 	
 	protected BufferedImage image;
 	
-	//Hello I was here!
-	
 	public CoreObject(float x, float y, int id, Textures tex){
 		this.x = x;
 		this.y = y;
