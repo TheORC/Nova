@@ -22,6 +22,7 @@ import com.Gamesareme.nova.screens.LoadScreen;
 import com.Gamesareme.nova.screens.Menu;
 import com.Gamesareme.nova.utils.AudioPlayer;
 import com.Gamesareme.nova.utils.ResourceLoader;
+import com.Gamesareme.nova.utils.Updater;
 import com.Gamesareme.nova.utils.files.TextFile;
 import com.Gamesareme.nova.world.Level;
 
@@ -51,7 +52,7 @@ public class Game extends Canvas implements Runnable{
 	
 	public Level level1;
 	
-	private int time = 100;
+	private int time = 50;
 	private int counter = 0;
 	
 	public static Game getInstance(){
@@ -123,6 +124,11 @@ public class Game extends Canvas implements Runnable{
 			LoadScreen.loadMore();
 			return;
 		case 8:
+			Updater.checkForUpdate(false);
+			counter++;
+			LoadScreen.loadMore();
+			return;
+		case 9:
 			counter++;
 			LoadScreen.loadMore();
 			state = GameState.MENU;
