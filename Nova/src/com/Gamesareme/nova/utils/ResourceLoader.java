@@ -27,9 +27,9 @@ public class ResourceLoader {
 	public static void loadImages(){
 		
 		try{
-			Images.spritesheetBlock = imageLoader.loadImage("Block_Sprite_Sheet.png");
-			//Images.blocksHD = imageLoader.loadImage("Block_Sprite_Sheet.png");
-			//Images.spritesheetBlock = ImageModifier.resizeImage(Images.blocksHD, Reference.ALPHA_RGB, 0, 0, 512, 512, 2);
+			Images.spritesheetBlock = imageLoader.loadImage("Blocks2.png");
+			//Images.blocksHD = imageLoader.loadImage("Blocks2.png");
+			//Images.spritesheetBlock = ImageModifier.resizeImage(Images.blocksHD, Reference.ALPHA_RGB, 0, 0, 512, 512, 1);
 			//Use this method, to make HD images.
 			Images.spritesheetChar = imageLoader.loadImage("Char.png");
 			Images.level1 = imageLoader.loadImage("Levels/Level1.png");

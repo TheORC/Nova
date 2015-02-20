@@ -39,12 +39,12 @@ public class Textures {
 	}
 	
 	private void initTextures(){
-		blockStone = sheetTest.getSprite(1, 1);
-		blockGrass = sheetTest.getSprite(2, 1);
-		blockGravel = sheetTest.getSprite(3, 1);
-		blockGrassStalk = sheetTest.getSprite(4, 1);
-		blockTreeTrunk = sheetTest.getSprite(5, 1);
-		blockTreeLeaves = sheetTest.getSprite(6, 1);
+		blockStone = sheetTest.getSprite(2, 1);
+		blockGrass = sheetTest.getSprite(4, 1);
+		blockGravel = sheetTest.getSprite(5, 7);
+		blockGrassStalk = sheetTest.getSprite(13, 9);
+		blockTreeTrunk = sheetTest.getSprite(5, 3);
+		blockTreeLeaves = sheetTest.getSprite(9, 1);
 		
 		playerIdleRight = playerSheet.getSprite(4, 3);
 		playerIdleLeft = playerSheet.getSprite(1, 2);
